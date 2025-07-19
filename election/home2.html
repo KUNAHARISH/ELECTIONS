@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Sivani Engineering College Elections 2025</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #e11d48;
+            --accent: #f59e0b;
+            --dark: #1e293b;
+            --light: #f1f5f9;
+            --success: #10b981;
+            --house1: #4f46e5;
+            --house2: #f43f5e;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f8fafc;
+            color: #334155;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--primary), #1e40af);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            z-index: 1;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 100px 0 80px;
+        }
+
+        .college-logo {
+            width: 120px;
+            height: 120px;
+            background-color: white;
+            border-radius: 50%;
+            padding: 15px;
+            margin: 0 auto 25px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .college-logo img {
+            width: 100%;
+            height: auto;
+        }
+
+        .header-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .header-content p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            font-weight: 400;
+        }
+
+        .header-buttons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background-color: white;
+            color: var(--primary);
+        }
+
+        .btn-primary:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-outline {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background-color: white;
+            color: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .header-wave svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 70px;
+        }
+
+        .header-wave .shape-fill {
+            fill: #FFFFFF;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: white;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            transition: color 0.3s;
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--primary);
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--dark);
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            width: 60%;
+            height: 4px;
+            background: var(--primary);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            color: #64748b;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .about-card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .about-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(var(--primary-rgb), 0.03) 0%, rgba(var(--primary-rgb), 0) 70%);
+            z-index: -1;
+        }
+
+        .about-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-card i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .about-card h3 {
+            margin-bottom: 15px;
+            color: var(--dark);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Houses Section */
+        .houses {
+            background-color: var(--light);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .houses::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%232563eb' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+
+        .houses-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            gap: 15px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .house-tab {
+            padding: 12px 25px;
+            background: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            font-size: 1rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .house-tab.house1 {
+            color: var(--house1);
+        }
+
+        .house-tab.house2 {
+            color: var(--house2);
+        }
+
+        .house-tab.active.house1 {
+            background: var(--house1);
+            color: white;
+            box-shadow: 0 5px 15px rgba(79, 70, 229, 0.3);
+        }
+
+        .house-tab.active.house2 {
+            background: var(--house2);
+            color: white;
+            box-shadow: 0 5px 15px rgba(244, 63, 94, 0.3);
+        }
+
+        .house-tab .house-icon {
+            font-size: 1.2rem;
+        }
+
+        .position-tabs {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+            flex-wrap: wrap;
+            gap: 10px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .position-tab {
+            padding: 8px 20px;
+            background: white;
+            border: 2px solid transparent;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            font-size: 0.95rem;
+        }
+
+        .position-tab.house1 {
+            border-color: var(--house1);
+            color: var(--house1);
+        }
+
+        .position-tab.house2 {
+            border-color: var(--house2);
+            color: var(--house2);
+        }
+
+        .position-tab.active.house1 {
+            background: var(--house1);
+            color: white;
+        }
+
+        .position-tab.active.house2 {
+            background: var(--house2);
+            color: white;
+        }
+
+        .candidates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .candidate-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            /* Removed fixed height to make it auto based on content */
+            height: auto;
+            padding-bottom: 25px;
+            /* Add padding at the bottom to make space for the symbol */
+        }
+
+        .candidate-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .candidate-image {
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .candidate-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .candidate-card:hover .candidate-image img {
+            transform: scale(1.1);
+        }
+
+        .candidate-branch {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: white;
+        }
+
+        .candidate-branch.house1 {
+            background: var(--house1);
+        }
+
+        .candidate-branch.house2 {
+            background: var(--house2);
+        }
+
+        .candidate-info {
+            padding: 5px 5px;
+            text-align: center;
+            position: relative;
+            /* Adjusted padding-top to make room for the symbol without !important */
+            padding-top: 20px;
+        }
+
+        .candidate-info::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            border-radius: 3px;
+        }
+
+        .candidate-info.house1::before {
+            background: var(--house1);
+        }
+
+        .candidate-info.house2::before {
+            background: var(--house2);
+        }
+
+        .candidate-info h3 {
+            margin-bottom: 10px;
+            color: var(--dark);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .candidate-info .candidate-year {
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+
+        .candidate-info p {
+            color: #334155;
+            font-size: 0.95rem;
+        }
+
+        .candidate-socials {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .candidate-socials a {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #64748b;
+            transition: all 0.3s;
+            font-size: 1rem;
+        }
+
+        .candidate-socials.house1 a:hover {
+            background: var(--house1);
+            color: white;
+        }
+
+        .candidate-socials.house2 a:hover {
+            background: var(--house2);
+            color: white;
+        }
+
+        .candidate-symbol {
+            position: absolute;
+            /* Position the symbol precisely at the bottom center of the card */
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            /* Adjust to center and pull it out */
+            width: 80px;
+            height: 80px;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 5;
+            border: 1px solid;
+            overflow: hidden;
+            margin-top: 25px;
+            margin-bottom: 40px;
+
+        }
+
+        .candidate-symbol.house1 {
+            border-color: var(--house1);
+        }
+
+        .candidate-symbol.house2 {
+            border-color: var(--house2);
+        }
+
+        .candidate-symbol img {
+            /* Ensure the image scales nicely within the symbol circle */
+            width: 80%;
+            height: 80%;
+            object-fit: contain;
+            /* Use 'contain' to ensure the whole image is visible */
+            margin-bottom: 10;
+        }
+
+        /* Rules Section */
+        .rules-container {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .rule-item {
+            margin-bottom: 30px;
+            border-left: 4px solid var(--primary);
+            padding-left: 20px;
+        }
+
+        .rule-item h3 {
+            color: var(--dark);
+            margin-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .rule-item ul {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        .rule-item li {
+            margin-bottom: 8px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 50px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-column h3 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            background: var(--primary);
+            bottom: 0;
+            left: 0;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .header-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .houses-tabs,
+            .position-tabs {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .house-tab,
+            .position-tab {
+                width: 100%;
+                max-width: 300px;
+                text-align: center;
+                justify-content: center;
+            }
+
+            .header-wave svg {
+                height: 40px;
+            }
+
+            .rules-container {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-content h1 {
+                font-size: 2rem;
+            }
+
+            .college-logo {
+                width: 100px;
+                height: 100px;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+        }
+
+        /* CSS Variables for RGB values */
+        :root {
+            --primary-rgb: 37, 99, 235;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="hero-pattern"></div>
+        <div class="container">
+            <div class="header-content">
+                <div class="college-logo">
+                    <!-- Replace with actual logo or use text placeholder -->
+                    <img src="images/image.png"
+                        alt="Sri Sivani Engineering College Logo">
+                </div>
+                <h2>Sri Sivani Engineering College Elections 2025</h2>
+                <h3>Department Of  CSE & AIML</h3>
+                <p>Vote for your house representatives and shape the future of our campus</p>
+                <div class="header-buttons">
+                    <a href="#candidates" class="btn btn-primary">Meet the Candidates</a>
+                    <a href="#rules" class="btn btn-outline">View Election Rules</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="images/image.png"
+                    alt="Logo">
+                Sri Sivani Elections
+            </div>
+            <button class="menu-toggle">☰</button>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#candidates">Candidates</a></li>
+                <li><a href="#rules">Rules & Regulations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About The Election</h2>
+                <p>Learn about our democratic process and how you can participate in shaping our college's future.</p>
+            </div>
+            <div class="about-content">
+                <div class="about-card">
+                    <i class="fas fa-vote-yea"></i>
+                    <h3>Voting Process</h3>
+                    <p>Elections will be held on campus with electronic voting systems. Students must bring their
+                        college ID to vote.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-trophy"></i>
+                    <h3>House System</h3>
+                    <p>Sri Sivani Engineering College has two houses competing in the elections. Each house will elect 3
+                        Presidents and 3 Vice-Presidents.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Important Dates</h3>
+                    <p>Nominations: July 20-25, 2025<br>Campaigning: July 26-31, 2025<br>Voting Day: August 1, 2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Candidates Section -->
+    <section id="candidates" class="houses">
+        <div class="container">
+            <div class="section-title">
+                <h2>Meet The Candidates</h2>
+                <p>Get to know the students who are running for leadership positions in our two houses.</p>
+            </div>
+
+            <div class="houses-tabs">
+                <button class="house-tab house1 active">
+                    <i class="fas fa-shield-alt house-icon"></i>
+                     House - 1
+                </button>
+                <button class="house-tab house2">
+                    <i class="fas fa-fire house-icon"></i>
+                 House - 2
+                </button>
+            </div>
+
+            <!-- Sapphire House Content -->
+            <div class="house-content" id="house1-content">
+                <div class="position-tabs">
+                    <div class="position-tab house1 active">President Candidates</div>
+                    <div class="position-tab house1">Vice-President Candidates</div>
+                </div>
+
+                <!-- Sapphire House - President Candidates -->
+                <div class="candidates-grid">
+                    <div class="candidate-card">
+                        <div class="candidate-image">
+                            <img src="images/SRAVANTHI.jpeg"
+                                alt="Candidate">
+                            <div class="candidate-branch house1">CSE</div>
+                        </div>
+                        <div class="candidate-symbol house1">
+                            <img src="images/SRAVANTHI LOGO.jpeg" alt="Candidate Symbol">
+                        </div>
+                        <div class="candidate-info house1">
+                            <h3>Sravanthi</h3>
+                            <div class="candidate-year">4th Year, Computer Science Engineering</div>
+                            <div class="candidate-socials house1">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="candidate-card">
+                        <div class="candidate-image">
+                            <img src="images/sai.jpeg"
+                                alt="Candidate">
+                            <div class="candidate-branch house1">AIML</div>
+                        </div>
+                        <div class="candidate-symbol house1">
+                            <img src="images/GLASS.png" alt="Candidate Symbol">
+                        </div>
+                        <div class="candidate-info house1">
+                            <h3>Sai Kumar Paila</h3>
+                            <div class="candidate-year">4th Year, AI & Machine Learning</div>
+                            <div class="candidate-socials house1">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="candidate-card">
+                        <div class="candidate-image">
+                            <img src="images/sarath.jpg"
+                                alt="Candidate">
+                            <div class="candidate-branch house1">CSE</div>
+                        </div>
+                        <div class="candidate-symbol house1">
+                            <img src="images/sarath logo.jpg" alt="Candidate Symbol">
+                        </div>
+                        <div class="candidate-info house1">
+                            <h3>Sarath</h3>
+                            <div class="candidate-year">4th Year, Computer Science Engineering</div>
+                            <div class="candidate-socials house1">
+
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sapphire House - Vice-President Candidates (Initially Hidden) -->
+                <div class="candidates-grid" style="display: none;">
+                    <div class="candidate-card">
+                        <div class="candidate-image">
+                            <img src="images/lokesh.jpg"
+                                alt="Candidate">
+                            <div class="candidate-branch house1">CSE</div>
+                        </div>
+                        <div class="candidate-symbol house1">
+                            <img src="images/lokesh logo.jpg" alt="Candidate Symbol">
+                        </div>
+                        <div class="candidate-info house1">
+                            <h3>Lokesh</h3>
+                            <div class="candidate-year">3rd Year, Computer Science And Engineering</div>
+                            <div class="candidate-socials house1">
+
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="candidate-card">
+                        <div class="candidate-image">
+                            <img src="images/dileep.jpeg"
+                                alt="Candidate">
+                            <div class="candidate-branch house1">CSE</div>
+                        </div>
+                        <div class="candidate-symbol house1">
+                            <img src="images/dileep logo.jpeg" alt="Candidate Symbol">
+                        </div>
+                        <div class="candidate-info house1">
+                            <h3>Dileep</h3>
+                            <div class="candidate-year">3rd Year, Computer Science Engineering</div>
+
+                            <div class="candidate-socials house1">
+
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="candidate-card">
+                        <div class="candidate-image">
+                            <img src="images/naidu.jpg"
+                                alt="Candidate">
+                            <div class="candidate-branch house1">AIML</div>
+                        </div>
+                        <div class="candidate-symbol house1">
+                            <img src="images/naidu logo.jpg" alt="Candidate Symbol">
+                        </div>
+                        <div class="candidate-info house1">
+                            <h3>Naidu </h3>
+                            <div class="candidate-year">3rd Year, AI & Machine Learning</div>
+                            
+                            <div class="candidate-socials house1">
+
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ruby House Content (Initially Hidden) -->
+            <div class="house-content" id="house2-content" style="display: none;">
+                <div class="position-tabs">
+                    <div class="position-tab house2 active">President Candidates</div>
+                    <div class="position-tab house2">Vice-President Candidates</div>
+                </div>
+
+                <!-- Ruby House - President Candidates -->
+                <div class="candidates-grid">
+                    <div class="candidate-card">
+                        <div class="candidate-image">
+                            <img src="images/gnanesh.png"
+                                alt="Candidate">
+                            <div class="candidate-branch house2">AIML</div>
+                        </div>
+                        <div class="candidate-symbol house1">
+                            <img src="images/gnanesh logo.png" alt="Candidate Symbol">
+                        </div>
+                        <div class="candidate-info house2">
+                            <h3>Gnaneswar</h3>
+                            <div class="candidate-year">4th Year, AI And Machine Learning</div>
+                            <div class="candidate-socials house2">
+
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="candidate-card">
+                        <div class="candidate-image">
+                            <img src="images/prabahas.jpeg"
+                                alt="Candidate">
+                            <div class="candidate-branch house2">CSE</div>
+                        </div>
+                        <div class="candidate-symbol house1">
+                            <img src="images\prabahas logo.jpeg" alt="Candidate Symbol">
+                        </div>
+                        <div class="candidate-info house2">
+                            <h3>Prabash</h3>
+                            <div class="candidate-year">4th Year, Computer Science Engineering</div>
+
+                            <div class="candidate-socials house2">
+
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="candidate-card">
+                        <div class="candidate-image">
+                            <img src="images/bhanu_img.jpg"
+                                alt="Candidate">
+                            <div class="candidate-branch house2">CSE</div>
+                        </div>
+                        <div class="candidate-symbol house1">
+                            <img src="images/BAHNU.jpeg" alt="Candidate Symbol">
+                        </div>
+                        <div class="candidate-info house2">
+                            <h3>Bhanu Prakash</h3>
+                            <div class="candidate-year">4th Year, Computer Science Engineering</div>
+
+                            <div class="candidate-socials house2">
+
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ruby House - Vice-President Candidates (Initially Hidden) -->
+                <div class="candidates-grid" style="display: none;">
+                    <div class="candidate-card">
+                        <div class="candidate-image">
+                            <img src="images/chandini.jpg"
+                                alt="Candidate">
+                            <div class="candidate-branch house2">AIML</div>
+                        </div>
+                        <div class="candidate-symbol house1">
+                            <img src="images/chandini logo.jpg" alt="Candidate Symbol">
+                        </div>
+                        <div class="candidate-info house2">
+                            <h3>Chandini</h3>
+                            <div class="candidate-year">3rd Year, Computer Science And Engineering</div>
+
+                            <div class="candidate-socials house2">
+
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="candidate-card">
+                        <div class="candidate-image">
+                            <img src="images/depika.jpg"
+                                alt="Candidate">
+                            <div class="candidate-branch house2">AIML</div>
+                        </div>
+                        <div class="candidate-symbol house1">
+                            <img src="images/deepika log.jpg" alt="Candidate Symbol">
+                        </div>
+                        <div class="candidate-info house2">
+                            <h3>Deepika Rani</h3>
+                            <div class="candidate-year">3rd Year, AI And Machine Learning</div>
+
+                            <div class="candidate-socials house2">
+
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="candidate-card">
+                        <div class="candidate-image">
+                            <img src="images/arvind.jpeg"
+                                alt="Candidate">
+                            <div class="candidate-branch house2">AIML</div>
+                        </div>
+                        <div class="candidate-symbol house1">
+                            <img src="images/arvind logo.jpeg" alt="Candidate Symbol">
+                        </div>
+                        <div class="candidate-info house2">
+                            <h3>Aravind</h3>
+                            <div class="candidate-year">3rd Year, Computer Science And Engineering</div>
+
+                            <div class="candidate-socials house2">
+
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section id="rules">
+        <div class="container">
+            <div class="section-title">
+                <h2>Rules & Regulations</h2>
+                <p>Understanding the election guidelines ensures a fair and transparent process for all.</p>
+            </div>
+
+            <div class="rules-container">
+                <div class="rule-item">
+                    <h3>Eligibility</h3>
+                    <p>All candidates must meet the following requirements:</p>
+                    <ul>
+                        <li>Must be a full-time student in CSE or AIML department</li>
+                        <li>Must maintain a minimum CGPA of 7.0</li>
+                        <li>Must not have any disciplinary actions against them</li>
+                        <li>Must be in their 2nd or 3rd year of study</li>
+                    </ul>
+                </div>
+
+                <div class="rule-item">
+                    <h3>Nomination Process</h3>
+                    <ul>
+                        <li>Nomination forms must be submitted by July 25, 2025</li>
+                        <li>Each nomination requires endorsement from at least 20 students</li>
+                        <li>Candidates must submit a brief statement of purpose (max 300 words)</li>
+                        <li>A professional photograph must be submitted with the nomination</li>
+                    </ul>
+                </div>
+
+                <div class="rule-item">
+                    <h3>Campaign Guidelines</h3>
+                    <ul>
+                        <li>Campaigning is allowed only between July 26-31, 2025</li>
+                        <li>No defamatory or derogatory remarks against other candidates</li>
+                        <li>Campaign materials must be approved by the Election Committee</li>
+                        <li>No campaign activities within 50 meters of the voting booths on election day</li>
+                        <li>Maximum campaign budget: USD 200 per candidate</li>
+                    </ul>
+                </div>
+
+                <div class="rule-item">
+                    <h3>Voting Procedure</h3>
+                    <ul>
+                        <li>Voting will be conducted electronically on August 1, 2025</li>
+                        <li>Students must present valid college ID to vote</li>
+                        <li>Each student can vote for one President and one Vice-President candidate from their house
+                        </li>
+                        <li>Results will be announced within 24 hours after voting closes</li>
+                    </ul>
+                </div>
+
+                <div class="rule-item">
+                    <h3>House System Rules</h3>
+                    <ul>
+                        <li>Each house (Sapphire and Ruby) will elect 3 Presidents and 3 Vice-Presidents</li>
+                        <li>Candidates must run for positions within their assigned house only</li>
+                        <li>The elected representatives will serve for one academic year</li>
+                        <li>House representatives will collaborate on inter-house activities and events</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Sri Sivani Engineering College</h3>
+                    <p>Shaping the future of our college through democratic participation and student leadership.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#candidates">Candidates</a></li>
+                        <li><a href="#rules">Rules & Regulations</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li>Election Committee Office</li>
+                        <li>Room 301, Admin Building</li>
+                        <li>Email: elections@srisivani.edu</li>
+                        <li>Phone: (123) 456-7890</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sri Sivani Engineering College Elections. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // House tabs functionality
+        const houseTabs = document.querySelectorAll('.house-tab');
+        const houseContents = document.querySelectorAll('.house-content');
+
+        houseTabs.forEach((tab, index) => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs
+                houseTabs.forEach(t => t.classList.remove('active'));
+                // Add active class to clicked tab
+                tab.classList.add('active');
+
+                // Hide all house contents
+                houseContents.forEach(content => content.style.display = 'none');
+                // Show the selected house content
+                houseContents[index].style.display = 'block';
+            });
+        });
+
+        // Position tabs functionality
+        const house1PositionTabs = document.querySelectorAll('#house1-content .position-tab');
+        const house1CandidatesGrids = document.querySelectorAll('#house1-content .candidates-grid');
+
+        house1PositionTabs.forEach((tab, index) => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs
+                house1PositionTabs.forEach(t => t.classList.remove('active'));
+                // Add active class to clicked tab
+                tab.classList.add('active');
+
+                // Hide all candidate grids
+                house1CandidatesGrids.forEach(grid => grid.style.display = 'none');
+                // Show the selected candidate grid
+                house1CandidatesGrids[index].style.display = 'grid';
+            });
+        });
+
+        const house2PositionTabs = document.querySelectorAll('#house2-content .position-tab');
+        const house2CandidatesGrids = document.querySelectorAll('#house2-content .candidates-grid');
+
+        house2PositionTabs.forEach((tab, index) => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs
+                house2PositionTabs.forEach(t => t.classList.remove('active'));
+                // Add active class to clicked tab
+                tab.classList.add('active');
+
+                // Hide all candidate grids
+                house2CandidatesGrids.forEach(grid => grid.style.display = 'none');
+                // Show the selected candidate grid
+                house2CandidatesGrids[index].style.display = 'grid';
+            });
+        });
+    </script>
+</body>
+
+</html>
